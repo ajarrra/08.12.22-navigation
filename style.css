@@ -33,10 +33,22 @@
     border: 0;
   }
 
+  25%{
+    background-color: blue;
+    border: 50px solid rgb(50, 50, 63);
+  }
+
   50%{
     background-color: green;
     border: 50px solid yellow;
   }
+
+  75%{
+    background-color: blueviolet;
+    border: 50px solid palevioletred;
+
+  }
+
 
   100%{
     background-color: aqua;
