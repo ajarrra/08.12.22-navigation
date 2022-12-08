@@ -8,15 +8,12 @@
     
 
 
-    animation-name: background-change, change-size;/*имя*/
-    animation-duration: 4s;/*скок длится аним*/
+    animation-name: background-change, change-size, change-deg;/*имя*/
+    animation-duration: 2s, 5s;/*скок длится аним*/
     animation-delay: 4s;/*скок стоит*/
     animation-fill-mode: both;/* исчезнет none, both стили остаются*/
-
-
     animation-iteration-count: infinite;/* бесконечно*/
     animation-direction: alternate; /* alternate плавный переход*/
-
     animation-timing-function: linear;/*скорость анимации*/
 }
 
@@ -61,7 +58,7 @@
 
     box-shadow: 1px 1px 50px gray;
     
-    transform: rotate(360deg);
+   
   }  
 }
 
@@ -73,4 +70,17 @@
  to{
     transform: scale(2);
  }
+}
+ 
+
+
+@keyframes change-deg{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+
+
 }
