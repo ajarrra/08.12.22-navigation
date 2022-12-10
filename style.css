@@ -226,3 +226,60 @@
         box-shadow: 0 0 25px  rgb(52, 51, 51);
     }
 }
+
+
+.example-5{
+    background-color: rgb(218, 48, 5);
+    width: 170px;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 35px;
+    margin-left: 55px;
+    display: block;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: loading;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: alternate ;
+    animation-timing-function: linear;
+}
+
+@keyframes loading{
+    0%{
+      border-left: 1px solid black;
+    }
+    10%{
+        border-left: 20px solid black;
+    }
+    20%{
+        border-left: 30px solid black;
+    }
+    30%{
+        border-left: 40px solid black;
+    }
+    40%{
+        border-left: 50px solid black ; 
+    }
+    50%{
+        border-left: 60px solid black;
+    }
+    60%{
+        border-left: 72px solid black;
+    }
+    70%{
+        border-left: 88px solid black;
+    }
+    80%{
+        border-left: 100px solid black;
+    }
+    90%{
+        border-left: 130px solid black;
+    }
+    100%{
+        border-left: 160px solid rgb(5, 5, 5);
+        background-color: red;
+    }
+}
