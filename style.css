@@ -279,7 +279,53 @@
         border-left: 130px solid black;
     }
     100%{
-        border-left: 160px solid rgb(5, 5, 5);
+        border-left: 170px solid rgb(5, 5, 5);
         background-color: red;
     }
 }
+
+
+
+
+
+.example-6{
+    background-color: aqua;
+    width: 55px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    
+   
+    background-color: rgb(120, 5, 5);
+    transform-origin: center 55px;
+    animation-name: clear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    
+    opacity: 0.5;   
+    border: 1px solid pink;
+}
+
+@keyframes clear {
+    0% {
+      background: rgb(162, 11, 162);
+      width: 2px;
+      left: calc(50% - 1px);
+    }
+    50% {
+      background: rgba(255, 255, 0, 1);
+      width: 50px;
+      left: calc(50% - 25px);
+    }
+    100% {
+      background: rgba(0, 255, 255, 1);
+      width: 2px;
+      left: calc(50% - 1px);
+    }
+  }
+
+
+
+  .example-7{
+background-color: gray;
+  }
