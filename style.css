@@ -1,77 +1,85 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.example-1{
+.example-1 {
     width: 100px;
     height: 100px;
-    
 
 
-    animation-name: background-change, change-size, change-deg;/*имя*/
-    animation-duration: 2s, 5s;/*скок длится аним*/
-    animation-delay: 4s;/*скок стоит*/
-    animation-fill-mode: both;/* исчезнет none, both стили остаются*/
-    animation-iteration-count: infinite;/* бесконечно*/
-    animation-direction: alternate; /* alternate плавный переход*/
-    animation-timing-function: linear;/*скорость анимации*/
+
+    animation-name: background-change, change-size, change-deg;
+    /*имя*/
+    animation-duration: 2s, 5s;
+    /*скок длится аним*/
+    animation-delay: 4s;
+    /*скок стоит*/
+    animation-fill-mode: both;
+    /* исчезнет none, both стили остаются*/
+    animation-iteration-count: infinite;
+    /* бесконечно*/
+    animation-direction: alternate;
+    /* alternate плавный переход*/
+    animation-timing-function: linear;
+    /*скорость анимации*/
 }
 
 
-.example-1:hover{
+.example-1:hover {
     animation-play-state: paused;
-    
+
 }
 
 
-@keyframes background-change{
+@keyframes background-change {
 
-  0%{
-    background-color: tomato;
-    border: 0;
-    border-radius: 50px;
-  }
+    0% {
+        background-color: tomato;
+        border: 0;
+        border-radius: 50px;
+    }
 
-  25%{
-    background-color: blue;
-    border: 10px dashed rgb(50, 50, 63);
-    box-shadow: 1px 1px 20px gray;
-  }
+    25% {
+        background-color: blue;
+        border: 10px dashed rgb(50, 50, 63);
+        box-shadow: 1px 1px 20px gray;
+    }
 
-  50%{
-    background-color: green;
-    border: 50px solid yellow;
-   
-  }
+    50% {
+        background-color: green;
+        border: 50px solid yellow;
 
-  75%{
-    background-color: blueviolet;
-    border: 1px dotted palevioletred;
-    
+    }
 
-  }
+    75% {
+        background-color: blueviolet;
+        border: 1px dotted palevioletred;
 
 
-  100%{
-    background-color: aqua;
-    border: 50px solid tomato;
+    }
 
-    box-shadow: 1px 1px 50px gray;
-    
-   
-  }  
+
+    100% {
+        background-color: aqua;
+        border: 50px solid tomato;
+
+        box-shadow: 1px 1px 50px gray;
+
+
+    }
 }
 
 
-@keyframes change-size{
- from{
-    transform: scale(1) rotate(0deg);
- }
- to{
-    transform: scale(2) rotate(360deg);
- }
+@keyframes change-size {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: scale(2) rotate(360deg);
+    }
 }
- 
+
 
 
 /*@keyframes change-deg{
@@ -88,7 +96,7 @@
 
 
 
-.example-2 span{
+.example-2 span {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -101,30 +109,31 @@
     animation-duration: 600ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
 }
 
-.example-2 span:nth-child(2){
+.example-2 span:nth-child(2) {
     animation-delay: 200ms;
 }
 
-.example-2 span:nth-child(3){
+.example-2 span:nth-child(3) {
     animation-delay: 200ms;
 }
 
-.example-2{
+.example-2 {
     margin-top: 70px;
     margin-left: 50px;
 }
 
 
 
-@keyframes scale{
-    from{
+@keyframes scale {
+    from {
         transform: scale(1);
         box-shadow: 0 0 5px 5px rgb(71, 70, 70);
     }
-    to{
+
+    to {
         transform: scale(1.5);
         box-shadow: 0 0 5px 5px gainsboro;
     }
@@ -133,7 +142,7 @@
 
 
 
-.example-3{
+.example-3 {
     width: 400px;
     height: 400px;
     background-color: beige;
@@ -141,7 +150,7 @@
     position: relative;
 }
 
-.example-3 .second-hand{
+.example-3 .second-hand {
     background-color: red;
     height: 4px;
     width: 200px;
@@ -155,7 +164,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
- 
+
 .example-3 .minute-hand {
     background-color: blue;
     height: 6px;
@@ -164,29 +173,30 @@
     top: 197px;
     left: 0;
     transform-origin: 100%;
-  
+
     animation-name: rotate;
     animation-duration: 3600s;
     animation-iteration-count: infinite;
     animation-timing-function: linear
-  }
+}
 
 
 
 
 
 
-@keyframes rotate{
-    from{
+@keyframes rotate {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
 
 
-.example-4{
+.example-4 {
     width: 250px;
     height: 250px;
     background-color: blueviolet;
@@ -194,41 +204,43 @@
     margin-top: 25px;
     margin-left: 50px;
     border-radius: 100%;
-    
+
 
 
     animation-name: swirl;
     animation-duration: 60s;
-    animation-delay: 4s ;
+    animation-delay: 4s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 
-@keyframes swirl{
-    0%{
-       transform: rotate(0deg);
-       background-color: blueviolet;
-       border: 5px dashed powderblue;
-       box-shadow: 0 0 25px gray;
+@keyframes swirl {
+    0% {
+        transform: rotate(0deg);
+        background-color: blueviolet;
+        border: 5px dashed powderblue;
+        box-shadow: 0 0 25px gray;
     }
-    50%{
-       transform: rotate(180deg);
-       background-color: rgb(77, 26, 128);
-       border: 5px dashed powderblue;
-       box-shadow: 0 0 25px  rgb(70, 69, 69);
+
+    50% {
+        transform: rotate(180deg);
+        background-color: rgb(77, 26, 128);
+        border: 5px dashed powderblue;
+        box-shadow: 0 0 25px rgb(70, 69, 69);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
         border: 5px dashed powderblue;
         background-color: rgb(54, 16, 90);
-        box-shadow: 0 0 25px  rgb(52, 51, 51);
+        box-shadow: 0 0 25px rgb(52, 51, 51);
     }
 }
 
 
-.example-5{
+.example-5 {
     background-color: rgb(218, 48, 5);
     width: 170px;
     height: 25px;
@@ -243,42 +255,52 @@
     animation-delay: 2s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    animation-direction: alternate ;
+    animation-direction: alternate;
     animation-timing-function: linear;
 }
 
-@keyframes loading{
-    0%{
-      border-left: 1px solid black;
+@keyframes loading {
+    0% {
+        border-left: 1px solid black;
     }
-    10%{
+
+    10% {
         border-left: 20px solid black;
     }
-    20%{
+
+    20% {
         border-left: 30px solid black;
     }
-    30%{
+
+    30% {
         border-left: 40px solid black;
     }
-    40%{
-        border-left: 50px solid black ; 
+
+    40% {
+        border-left: 50px solid black;
     }
-    50%{
+
+    50% {
         border-left: 60px solid black;
     }
-    60%{
+
+    60% {
         border-left: 72px solid black;
     }
-    70%{
+
+    70% {
         border-left: 88px solid black;
     }
-    80%{
+
+    80% {
         border-left: 100px solid black;
     }
-    90%{
+
+    90% {
         border-left: 130px solid black;
     }
-    100%{
+
+    100% {
         border-left: 170px solid rgb(5, 5, 5);
         background-color: red;
     }
@@ -288,44 +310,91 @@
 
 
 
-.example-6{
+.example-6 {
     background-color: aqua;
     width: 55px;
     height: 100px;
     display: inline-block;
     position: relative;
-    
-   
+
+
     background-color: rgb(120, 5, 5);
     transform-origin: center 55px;
     animation-name: clear;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
-    
-    opacity: 0.5;   
+
+    opacity: 0.5;
     border: 1px solid pink;
 }
 
 @keyframes clear {
     0% {
-      background: rgb(162, 11, 162);
-      width: 2px;
-      left: calc(50% - 1px);
+        background: rgb(162, 11, 162);
+        width: 2px;
+        left: calc(50% - 1px);
     }
+
     50% {
-      background: rgba(255, 255, 0, 1);
-      width: 50px;
-      left: calc(50% - 25px);
+        background: rgba(255, 255, 0, 1);
+        width: 50px;
+        left: calc(50% - 25px);
     }
+
     100% {
-      background: rgba(0, 255, 255, 1);
-      width: 2px;
-      left: calc(50% - 1px);
+        background: rgba(0, 255, 255, 1);
+        width: 2px;
+        left: calc(50% - 1px);
     }
-  }
+}
 
 
 
-  .example-7{
-background-color: gray;
-  }
+.example-7 span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(45, 150, 113);
+    box-shadow: 0 0 5px 5px rgb(92, 91, 91);
+    margin-right: 25px;
+    
+       
+    animation-name: beat;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.example-7 span:nth-child(2) {
+    animation-delay: 200ms;
+
+}
+
+.example-7 span:nth-child(3) {
+    animation-delay: 300ms;
+    
+}
+.example-7 span:nth-child(4) {
+    animation-delay: 400ms;
+}
+
+.example-7 {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+
+@keyframes beat {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 5px 5px rgb(71, 70, 70);
+        
+    }
+
+    to {
+        transform: scale(1.2);
+        box-shadow: 0 0 5px 5px gainsboro;
+        background-color: rgb(28, 87, 66);
+    }
+}
