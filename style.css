@@ -190,10 +190,39 @@
     width: 250px;
     height: 250px;
     background-color: blueviolet;
-
+    padding-right: 100px;
     margin-top: 25px;
     margin-left: 50px;
     border-radius: 100%;
+    
+
+
+    animation-name: swirl;
+    animation-duration: 60s;
+    animation-delay: 4s ;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
-
+@keyframes swirl{
+    0%{
+       transform: rotate(0deg);
+       background-color: blueviolet;
+       border: 5px dashed powderblue;
+       box-shadow: 0 0 25px gray;
+    }
+    50%{
+       transform: rotate(180deg);
+       background-color: rgb(77, 26, 128);
+       border: 5px dashed powderblue;
+       box-shadow: 0 0 25px  rgb(70, 69, 69);
+    }
+    100%{
+        transform: rotate(360deg);
+        border: 5px dashed powderblue;
+        background-color: rgb(54, 16, 90);
+        box-shadow: 0 0 25px  rgb(52, 51, 51);
+    }
+}
